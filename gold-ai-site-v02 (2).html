@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#0b1020"><title>GOLD AI Trading</title>
+<style>
+:root{--bg:#0b1020;--panel:#18233a;--line:#26334d;--text:#edf3ff;--muted:#91a0bb;--gold:#f5c76a}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--text);font:14px/1.5 system-ui,Arial}.wrap{max-width:1050px;margin:auto;padding:20px 15px 40px}.top,.head,.line{display:flex;justify-content:space-between;align-items:center;gap:12px}.brand{color:var(--gold);font-weight:800}.muted,.sub{color:var(--muted);font-size:12px}.tag{border:1px solid #6d562b;color:var(--gold);border-radius:20px;padding:5px 9px;font-size:10px}.grid{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin:18px 0}.main{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:14px}.card{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:16px;min-width:0}.metric{font-size:24px;font-weight:800;margin:8px 0}.gold{color:var(--gold)}.line{padding:10px 0;border-bottom:1px solid var(--line)}.line:last-child{border:0}.chart{height:450px;width:100%;overflow:hidden;border-radius:10px}.tv-widget,.tv-widget__widget{height:100%;width:100%}footer{text-align:center;color:var(--muted);font-size:11px;margin-top:22px}
+@media(max-width:700px){.grid{grid-template-columns:1fr 1fr}.main{grid-template-columns:1fr}.chart{height:420px}}
+</style></head><body><div class="wrap">
+<header class="top"><div><div class="brand">GOLD AI TRADING</div><div class="muted">Multi-timeframe trading assistant</div></div><span class="tag">DEMO PREVIEW</span></header>
+<h1>Trading Dashboard</h1><div class="muted">Market overview • Signals • Risk • News</div>
+<div class="grid">
+<div class="card"><div class="muted">Instrument</div><div class="metric">GOLD</div><div class="sub">Broker symbol</div></div>
+<div class="card"><div class="muted">Market Price</div><div class="metric">— —</div><div class="sub">XM live feed not connected</div></div>
+<div class="card"><div class="muted">Main Trend</div><div class="metric gold">WAIT</div><div class="sub">Waiting for data</div></div>
+<div class="card"><div class="muted">Open Positions</div><div class="metric">0</div><div class="sub">MT5 not connected</div></div></div>
+<section class="card"><div class="head"><b>Live Gold Chart</b><span class="tag">EXTERNAL MARKET FEED</span></div>
+<p class="sub">TradingView OANDA:XAUUSD indicative chart. This is not an XM account feed; GOLD / XAUUSD / XAUUSDm broker symbols may have different prices.</p>
+<div class="chart"><div class="tv-widget"><div class="tv-widget__widget"></div><script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-advanced-chart.js" async>
+{"autosize":true,"symbol":"OANDA:XAUUSD","interval":"5","timezone":"Etc/UTC","theme":"dark","style":"1","locale":"en","allow_symbol_change":true,"calendar":false,"support_host":"https://www.tradingview.com"}
+</script></div></div></section>
+<div class="main">
+<section class="card"><b>AI Trade Signal</b><div class="metric gold">WAIT</div><div class="line"><span class="muted">Entry</span><b>—</b></div><div class="line"><span class="muted">Stop Loss</span><b>—</b></div><div class="line"><span class="muted">Lot Size</span><b>—</b></div><p class="sub">No live signal engine is connected.</p></section>
+<section class="card"><b>Risk Monitor</b><div class="line"><span class="muted">Risk per trade</span><b>0.5%</b></div><div class="line"><span class="muted">Daily loss stop</span><b>3.0%</b></div><div class="line"><span class="muted">Max positions</span><b>Up to 3</b></div><div class="line"><span class="muted">Combined risk cap</span><b>1.5%</b></div></section>
+<section class="card"><b>Unified News Intelligence</b><div class="line"><span>Pre-news</span><b class="gold">Standby</b></div><div class="line"><span>Release reaction</span><b class="gold">Standby</b></div><div class="line"><span>Post-news</span><b class="gold">Standby</b></div><p class="sub">Economic calendar not connected.</p></section>
+<section class="card"><b>Trend Engine</b><div class="line"><span>H1 direction</span><b>Waiting</b></div><div class="line"><span>M15 structure</span><b>Waiting</b></div><div class="line"><span>M5 confirmation</span><b>Waiting</b></div><div class="line"><span>M1 entry trigger</span><b>Waiting</b></div></section></div>
+<footer>GOLD AI TRADING • Prototype v0.2 • No broker connection • No profit or win-rate is guaranteed.</footer></div></body></html>
